@@ -4,7 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+           Group group = new(){ Name = "P44" };
+            group.AddPerson(new Person() { Name = "Vasya", Age = 17 });
+            group.PrintInfo();
         }
     }
 }
